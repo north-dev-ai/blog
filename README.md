@@ -8,6 +8,20 @@ Production-tested guides for GitHub Actions, Docker, and CI/CD cost reduction.
 
 ## 📚 Published Guides
 
+### [GitHub Actions Monorepo CI/CD Strategies: Test Only What Changed](github-actions-monorepo-strategies.md)
+**11 min read** • Monorepo • Microservices • Cost Optimization
+
+You have 12 microservices in one repo. A developer pushes a 2-line change to one service. Your CI/CD runs all 12 service tests, builds, and deployments (95 minutes, $18). **The reality:** Only 1 service changed. You just wasted 92 minutes and $17.
+
+**Learn:**
+- Path-based change detection with dependency awareness
+- Parallel matrix builds for changed services only
+- Shared caching across services (Yarn workspaces, Turborepo)
+- Conditional deployments (deploy only changed services)
+- Real case study: $24,480/month savings (93% cost reduction)
+
+---
+
 ### [GitHub Actions Secrets Management: Best Practices for 2026](github-actions-secrets-management.md)
 **12 min read** • Security • Secrets Management • Best Practices
 
@@ -71,9 +85,9 @@ Docker builds taking 6-10 minutes in CI? Enable BuildKit and use registry cachin
 
 ## 📊 Stats
 
-- **4 comprehensive guides**
-- **~11,900 words** of production-tested content
-- **Topics:** Cost optimization, caching, Docker, security, secrets management
+- **5 comprehensive guides**
+- **~14,200 words** of production-tested content
+- **Topics:** Cost optimization, caching, Docker, security, secrets management, monorepo strategies
 - **All examples tested in real production environments**
 
 ---
@@ -85,7 +99,7 @@ All these optimization patterns (and more) are included in our **[GitHub Actions
 **Includes:**
 - Node.js, Python, Docker workflows
 - Security scanning with CodeQL
-- Monorepo support
+- Monorepo support with path-based triggers
 - Complete documentation
 - Real-world case studies
 
